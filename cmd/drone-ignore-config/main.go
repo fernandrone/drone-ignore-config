@@ -44,8 +44,8 @@ func main() {
 
 	handler := config.Handler(
 		plugin.New(
-			spec.Token,
 			spec.Server,
+			spec.Token,
 		),
 		spec.Secret,
 		log.StandardLogger(),
