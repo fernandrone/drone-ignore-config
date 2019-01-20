@@ -31,17 +31,6 @@ steps:
       from_secret: dockerhub_password
     username: fbcbarbosa
   when:
-    branch:
-    - master
-
-- name: publish
-  image: plugins/docker
-  settings:
-    auto_tag: true
-    repo: fbcbarbosa/drone-config
-    password:
-      from_secret: dockerhub_password
-    username: fbcbarbosa
-  when:
-    event:
-    - tag
+    ref:
+    - refs/heads/master
+    - refs/tags/*
