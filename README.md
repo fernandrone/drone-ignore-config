@@ -6,7 +6,7 @@ Patterns are defined at a `.droneignore` file, similar to `.gitignore` and `.doc
 
 ## Installation
 
-At the moment it supports GitHub only.
+At the moment it supports only GitHub.
 
 1. Generate a GitHub access token with `repo` permission. This token is used to fetch the `.droneignore` configuration file.
 
