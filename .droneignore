@@ -1,8 +1,12 @@
 *
 
+!.dockerignore
+!.droneignore
+!.drone.yml
+
+!Dockerfile
+
 !cmd
 !plugin
 !vendor
-!.dockerignore
-!.droneignore
-!Dockerfile
+
