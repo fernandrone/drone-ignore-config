@@ -1,0 +1,8 @@
+*
+
+!cmd
+!plugin
+!vendor
+!.dockerignore
+!.droneignore
+!Dockerfile
