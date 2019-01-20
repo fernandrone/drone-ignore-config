@@ -19,7 +19,7 @@ import (
 // empty context
 var noContext = context.Background()
 
-// template for drone ignore file
+// template for droneignore file
 const droneignoreTemplate = `{
 	"type": "file",
 	"encoding": "base64",

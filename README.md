@@ -17,7 +17,6 @@ At the moment it supports only GitHub.
 
 3. Run the container somewhere where the drone server can reach it:
 
-
         docker run \
           -p ${PLUGIN_PORT}:3000 \
           -e PLUGIN_SECRET=558f3eacbfd5928157cbfe34823ab921 \
