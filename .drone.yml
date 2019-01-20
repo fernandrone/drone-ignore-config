@@ -11,12 +11,19 @@ workspace:
   path: src/github.com/drone/drone-ignore-config
 
 steps:
-pipeline:
-  
-  test:
-    image: golang:1.11
-    commands:
-      - go get -u github.com/golang/dep/cmd/dep
-      - dep ensure
-      - go vet ./...
-      - go test ./...
+- name: test
+  image: golang:1.11
+  commands:
+  - go get -u github.com/golang/dep/cmd/dep
+  - dep ensure
+  - go vet ./...
+  - go test ./...  
+
+- name: publish
+  image: plugins/docker
+  settings:
+    auto_tag: true
+    repo: fbcbarbosa/drone-config
+    password:
+      from_secret: dockerhub_password
+    username: fbcbarbosa
